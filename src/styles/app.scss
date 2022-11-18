@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Architects+Daughter");
+
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +7,35 @@
 }
 
 body {
-  background-color: #372948;
-  font-family: "Nunito Sans", sans-serif;
+  // font-family: "Nunito Sans", sans-serif;
+  // font-family: oswald, sans-serif;
+  font-family: "Architects Daughter", cursive;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  min-height: 100vh;
 }
+
+.img-background {
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  min-height: 600px;
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  overflow-y: auto;
+}
+
+header {
+  background-color: #251b37;
+  padding: 1rem;
+
+  h1 {
+    padding-left: 2rem;
+    color: #ffecef;
+  }
+}
+@import "./todoform";
