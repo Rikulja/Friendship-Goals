@@ -18,10 +18,17 @@ const Form = ({ inputText, setInputText, todos, setTodos }) => {
   };
 
   return (
-    <form>
-      <input onChange={textInputHandler} type="text" value={inputText} />
-      <button onClick={submitHandler}>+</button>
-    </form>
+    <div className="todo-form">
+      <form>
+        <input
+          className="text-input"
+          onChange={textInputHandler}
+          type="text"
+          value={inputText}
+        />
+        <button onClick={submitHandler}>+</button>
+      </form>
+    </div>
   );
 };
 
