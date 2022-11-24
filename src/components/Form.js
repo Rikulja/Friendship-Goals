@@ -12,23 +12,22 @@ const Form = ({ inputText, setInputText, todos, setTodos }) => {
       {
         id: uuidv4(),
         text: inputText,
+        completed: false,
       },
     ]);
     setInputText("");
   };
 
   return (
-    <div className="todo-form">
-      <form>
-        <input
-          className="text-input"
-          onChange={textInputHandler}
-          type="text"
-          value={inputText}
-        />
-        <button onClick={submitHandler}>+</button>
-      </form>
-    </div>
+    <form>
+      <input
+        className="text-input"
+        onChange={textInputHandler}
+        type="text"
+        value={inputText}
+      />
+      <button onClick={submitHandler}>+</button>
+    </form>
   );
 };
 

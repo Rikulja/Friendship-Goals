@@ -13,28 +13,35 @@ body {
   font-weight: 300;
   letter-spacing: 2px;
   text-transform: uppercase;
-  min-height: 100vh;
 }
 
-.img-background {
-  width: 100%;
-  position: relative;
-  background-size: cover;
-  min-height: 600px;
+.App {
   min-height: 100vh;
+  height: 100%;
   background-attachment: fixed;
   background-size: cover;
-  width: 100%;
-  display: flex;
   overflow-y: auto;
 }
+// .img-background {
+//   width: 100%;
+//   position: relative;
+//   background-size: cover;
+//   min-height: 600px;
+//   min-height: 100vh;
+//   background-attachment: fixed;
+//   background-size: cover;
+//   width: 100%;
+//   display: flex;
+//   overflow-y: auto;
+// }
 
 header {
   background-color: #251b37;
   padding: 1rem;
-
+  font-size: 80%;
   h1 {
     padding-left: 2rem;
+
     color: #ffecef;
   }
 }
