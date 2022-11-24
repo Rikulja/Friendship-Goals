@@ -1,4 +1,4 @@
-.todo-form {
+.todo-all {
   // height: 70vh;
   position: relative;
   padding: 50px;
@@ -6,17 +6,16 @@
   overflow: hidden;
   color: #000;
   max-width: 600px;
-  // min-height: 50rem;
-
-  background-color: #372948;
-  opacity: 0.5;
+  min-height: 50rem;
+  background-color: #372948d8;
   border-radius: 3%;
   margin: 3% auto;
 }
 
 form {
   display: flex;
-
+  justify-content: center;
+  align-items: center;
   input,
   button {
     padding: 0.5rem;
@@ -24,4 +23,30 @@ form {
     border: none;
     background: white;
   }
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.todo-list {
+  min-width: 30%;
+  list-style: none;
+}
+
+.todo {
+  margin: 0.5rem;
+  font-size: 2rem;
+  color: #ffecef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s ease;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
 }
